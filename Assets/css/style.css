@@ -1,0 +1,136 @@
+body, html {
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.clearfix::after {
+    overflow: auto;
+}
+.div1 {
+        border: 3px ;
+        padding: 5px;
+}
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Load.jpg");
+    height: 65%;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100%
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+body {
+background-color: blue;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* *li{ */
+    /* display: inline; */
+/* } */
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+
+
+
+@media screen and (min-width: 768px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.main {
+    flex: 70%;
+    background-color: rgb(5, 18, 199);
+    padding: 20px;
+}
+
+  /* Fake image, just for this example */
+#pic {
+    background-color: rgb(0, 170, 243);
+    width:50%;
+    height: 50%;
+    padding: 20px;
+}
+
+img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+img:hover {
+    box-shadow: 10px 5px 5px 1px rgba(0, 140, 186, 0.5);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+/*#pic {style="width:4000px;height:400px;margin-left:15px;"}*/
+
+.img1 {
+    float: left;
+}
+
+.row {
+
+}
