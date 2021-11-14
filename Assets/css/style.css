@@ -2,31 +2,73 @@ body, html {
     height: 100%;
 }
 
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .5fr 1.2fr 1.2fr 1.1fr;
+    /* grid-template-rows: 0.8fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "sidebar info info info"
+        "sidebar prework random"
+        "sidebar contact contact contact"; */
+}
+
 *{
     box-sizing: border-box;
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+nav{
+    grid-area: nav;
 }
 
-.clear::after {
-    overflow: auto;
+#sidebar{
+    grid-area: sidebar;
 }
-.div1 {
+
+#info{
+    grid-area: info;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#ContactMe{
+    grid-area: ContactMe;
+}
+
+#prework{
+    grid-area: prework;
+}
+
+#contact{
+    grid-area: contact;
+}
+
+#random{
+    grid-area: random;
+}
+
+/* [class*="col-"] {
+    float: left;
+    padding: 15px;
+} */
+
+/* .clear::after {
+    overflow: auto;
+} */
+/* .div1 {
         border: 3px ;
         padding: 5px;
-}
+} */
 /* The hero image */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Load.jpg");
-    height: 65%;
+    height: 800px;
     width: 100%;
     background-position: center;
     background-repeat: repeat-y;
-    background-size: 100%
-
+    background-size: cover;
 }
 
 /* Place text in the middle of the image */
@@ -46,10 +88,13 @@ ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: #333;
 }
 
-li {float: left;}
+/* li {
+    float: left;
+} */
 
 ul.topnav li a {
     display: block;
@@ -59,9 +104,6 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-/* *li{ */
-    /* display: inline; */
-/* } */
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
 
@@ -125,10 +167,9 @@ img:hover {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-/*#pic {style="width:4000px;height:400px;margin-left:15px;"}*/
 
 .img1 {
-    float: left;
+    float: right;
 }
 
 .bounce {
@@ -142,6 +183,7 @@ img:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* .container {
-    padding: 2px 16px;
-} */
+.card-text{
+    display: flex;
+    flex
+}
